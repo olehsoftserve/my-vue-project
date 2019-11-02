@@ -1,0 +1,46 @@
+@import '../../styles/colors.scss';
+
+.project.in_progress {
+    border-left: 5px solid $in_progress ;
+
+} 
+.project.complete {
+    border-left: 5px solid $complete;
+
+} 
+.project.not_started {
+    border-left: 5px solid $not_started;
+
+} 
+.project.pending {
+    border-left: 5px solid $complete;
+
+} 
+.project.failure {
+    border-left: 5px solid $failure;
+
+} 
+
+.status{
+    font-size: 14px;
+    font-weight:bold;
+    padding: 4px;
+    color: #fff;
+    border-radius: 2px;
+    &.failure{
+        background-color: $in_progress;
+    }
+    &.complete{
+        background-color: $complete;
+    }
+    &.pending{
+        background-color: $panding;
+    }
+    &.not_started{
+        background-color: $not_started;
+    }
+    &.in_progress{
+        background-color: $in_progress;
+    }
+}
+
