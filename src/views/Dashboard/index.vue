@@ -28,6 +28,7 @@
             <div><span :class="`status ${project.status}`">{{project.status}}</span></div>
           </v-flex>
         </v-layout>
+        <v-divider></v-divider>
       </v-card>
     </v-container>
   </div>

@@ -22,11 +22,16 @@
 } 
 
 .status{
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-align: center;
     font-size: 14px;
     font-weight:bold;
-    padding: 4px;
     color: #fff;
     border-radius: 2px;
+    box-shadow: 3px 5px 11px grey;
+
     &.failure{
         background-color: $in_progress;
     }
