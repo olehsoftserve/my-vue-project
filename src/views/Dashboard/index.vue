@@ -5,7 +5,7 @@
     <h1 class="subheading grey--text">This is an dashboard page</h1>
 
     <v-container class="my-5">
-      <v-card flat class="pa-3" v-for="project in projects" :key="project.title">
+      <v-card flat v-for="project in projects" :key="project.title">
         <v-layout row wrap :class="`pa-3 project ${project.status}`">
 
           <v-flex xs12 md6 bl1>
