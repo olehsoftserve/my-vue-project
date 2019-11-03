@@ -1,31 +1,55 @@
 
-
 <template>
   <div class="dashboard">
     <h1 class="subheading grey--text">This is an dashboard page</h1>
 
     <v-container class="my-5">
+      <v-layout>
+        
+        <span class="caption text-lowercsase pa-1 grey--text mb-5">Sort by:</span>
+
+        <v-btn small flat color="grey--text" @click="sortBy('title')">
+          <v-icon left small>folder</v-icon>
+          <span class="caption text-uppercase">project</span>
+        </v-btn>
+
+        <v-btn small flat color="grey--text" @click="sortBy('person')">
+          <v-icon left small>person</v-icon>
+          <span class="caption grey--text">person</span>
+        </v-btn>
+
+        <v-btn small flat color="grey--text " @click="sortBy('status')">
+          <v-icon left small>cached</v-icon>
+          <span class="caption text-uppercase">status</span>
+        </v-btn>
+
+      </v-layout>
+
       <v-card flat v-for="project in projects" :key="project.title">
         <v-layout row wrap :class="`pa-3 project ${project.status}`">
-
-          <v-flex xs12 md6 bl1>
-            <div class="caption grey--text" >Project title</div>
+          <v-flex xs12 md6>
+            <div class="caption grey--text">Project title</div>
             <div>{{project.title}}</div>
           </v-flex>
 
-          <v-flex xs6 sm4 md2 bl2>
+          <v-flex xs6 sm4 md2>
             <div class="caption grey--text">Person</div>
             <div>{{project.person}}</div>
           </v-flex>
 
-          <v-flex xs6 sm4 md2 bl2>
+          <v-flex xs6 sm4 md2>
             <div class="caption grey--text">Due by</div>
             <div>{{project.due}}</div>
           </v-flex>
-
-          <v-flex xs6 sm4 md2 bl2>
-            <div class="caption grey--text"><span>status</span></div>
-            <div><span :class="`status ${project.status}`">{{project.status}}</span></div>
+          <v-flex xs6 sm4 md2>
+            <div align="right">
+              <v-chip
+                small
+                :color="`${project.status}`"
+                :class="`v-chip--active white--text caption my-2`"
+              >{{project.status}}</v-chip>
+            </div>
+            <!--div><span :class="`status ${project.status}`">{{project.status}}</span></div-->
           </v-flex>
         </v-layout>
         <v-divider></v-divider>
@@ -82,18 +106,18 @@ export default {
         {
           title: "Scambler",
           person: "Garry",
-          status_bg: "red",
           due: "1st Sep  2007",
           status: "failure",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
         }
-        
       ]
     };
+  },
+  methods: {
+    sortBy(prop) {
+      this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
+    }
   }
 };
 </script>
-
-<style>
-</style>

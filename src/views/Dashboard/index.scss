@@ -21,31 +21,29 @@
 
 } 
 
-.status{
-    display: block;
-    width: 100px;
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight:bold;
-    color: #fff;
-    border-radius: 2px;
-    box-shadow: 3px 5px 11px grey;
-
-    &.failure{
-        background-color: $in_progress;
-    }
-    &.complete{
-        background-color: $complete;
-    }
-    &.pending{
-        background-color: $panding;
-    }
-    &.not_started{
-        background-color: $not_started;
-    }
-    &.in_progress{
-        background-color: $in_progress;
-    }
+.v-chip.failure {
+    background-color: $failure;
+    font-weight: bold;
+    box-shadow:5px 6px 9px 2px rgba(54, 54, 58, 0.2)
 }
+.v-chip.in_progress {
+    background-color: $in_progress ;
+    font-weight: bold;
+    box-shadow:5px 6px 9px 2px rgba(54, 54, 58, 0.2)
+} 
+.v-chip.complete {
+    background-color: $complete;
+    font-weight: bold;
+    box-shadow:5px 6px 9px 2px rgba(54, 54, 58, 0.2)
+} 
+.v-chip.not_started {
+    font-weight: bold;
+    background-color: $not_started;
+    box-shadow:5px 6px 9px 2px rgba(54, 54, 58, 0.2)
+} 
+.v-chip.pending {
+    font-weight: bold;
+    background-color: $panding;
+    box-shadow:5px 6px 9px 2px rgba(54, 54, 58, 0.2)
+} 
 
