@@ -1,7 +1,7 @@
 
 <template>
   <div class="dashboard">
-    <h1 class="subheading grey--text">This is an dashboard page</h1>
+    <!--h1 class="subheading grey--text">This is an dashboard page</h1-->
 
     <v-container class="my-5">
       <v-layout>
@@ -14,7 +14,7 @@
               <span right class="caption text-uppercase">project</span>
             </v-btn>
           </template>
-          <span>Sorts projects by name</span>
+          <span>Sort by project name</span>
         </v-tooltip>
                 <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -23,7 +23,7 @@
               <span right class="caption text-uppercase">person</span>
             </v-btn>
           </template>
-          <span>Sorts projects by name</span>
+          <span>Sort by person name</span>
         </v-tooltip>
                 <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -32,7 +32,7 @@
               <span right class="caption text-uppercase">status</span>
             </v-btn>
           </template>
-          <span>Sorts projects by name</span>
+          <span>Sort by status</span>
         </v-tooltip>
 
       </v-layout>
@@ -78,7 +78,7 @@ export default {
         {
           title: "Amadey",
           person: "John",
-          due: "1st Jan 2016",
+          due: "17st Jan 2016",
           status: "in_progress",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
@@ -86,7 +86,7 @@ export default {
         {
           title: "Google",
           person: "Anna",
-          due: "1st Jan 2011",
+          due: "10st Jan 2011",
           status: "complete",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
@@ -102,7 +102,7 @@ export default {
         {
           title: "Foldex",
           person: "Yan",
-          due: "1st Jul 2017",
+          due: "27st Jul 2017",
           status: "complete",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
@@ -110,15 +110,15 @@ export default {
         {
           title: "Google",
           person: "Brian",
-          due: "1st Sep  2019",
+          due: "9st Sep  2019",
           status: "pending",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
         },
         {
-          title: "Scambler",
+          title: "Scrambler",
           person: "Garry",
-          due: "1st Sep  2007",
+          due: "7st Sep  2007",
           status: "failure",
           content:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
