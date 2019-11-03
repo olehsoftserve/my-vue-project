@@ -5,23 +5,35 @@
 
     <v-container class="my-5">
       <v-layout>
-        
-        <span class="caption text-lowercsase pa-1 grey--text mb-5">Sort by:</span>
+        <span class="caption text-lowercsase pa-1 grey--text mb-5"></span>
 
-        <v-btn small flat color="grey--text" @click="sortBy('title')">
-          <v-icon left small>folder</v-icon>
-          <span class="caption text-uppercase">project</span>
-        </v-btn>
-
-        <v-btn small flat color="grey--text" @click="sortBy('person')">
-          <v-icon left small>person</v-icon>
-          <span class="caption grey--text">person</span>
-        </v-btn>
-
-        <v-btn small flat color="grey--text " @click="sortBy('status')">
-          <v-icon left small>cached</v-icon>
-          <span class="caption text-uppercase">status</span>
-        </v-btn>
+        <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn small flat color="grey--text" @click="sortBy('title')" v-on="on">
+              <v-icon left small>folder</v-icon>
+              <span right class="caption text-uppercase">project</span>
+            </v-btn>
+          </template>
+          <span>Sorts projects by name</span>
+        </v-tooltip>
+                <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn small flat color="grey--text" @click="sortBy('folder')" v-on="on">
+              <v-icon left small>person</v-icon>
+              <span right class="caption text-uppercase">person</span>
+            </v-btn>
+          </template>
+          <span>Sorts projects by name</span>
+        </v-tooltip>
+                <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn small flat color="grey--text" @click="sortBy('status')" v-on="on">
+              <v-icon left small>cached</v-icon>
+              <span right class="caption text-uppercase">status</span>
+            </v-btn>
+          </template>
+          <span>Sorts projects by name</span>
+        </v-tooltip>
 
       </v-layout>
 
