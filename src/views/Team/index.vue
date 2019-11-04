@@ -39,62 +39,61 @@ export default {
         {
           name: "Yan",
           role: "CEO",
-          avatar:'ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Anna",
           role: "Project Manager",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         { 
           name: "George", 
           role: "Designer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
          },
         {
           name: "Veronika",
           role: "Software Font-end Developer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "David",
           role: "Software Developer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Den",
           role: "Software Developer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Elison",
           role: "Software Developer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Nicole",
           role: "Software Developer",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Lee",
           role: "Automation Tester",
-          avatar:'/ava.png'
-        },
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'        },
         {
           name: "Brandon",
           role: "Automation Tester",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Peter",
           role: "Manual QA",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         },
         {
           name: "Jessica",
           role: "Manual QA",
-          avatar:'/ava.png'
+          avatar:'https://png.pngtree.com/svg/20161212/f93e57629c.svg'
         }
       ]
     };

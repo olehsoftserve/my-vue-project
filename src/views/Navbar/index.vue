@@ -17,7 +17,7 @@
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
-            <img src="/ava.png" alt="cabinet_avatar">
+            <img src="https://scontent.flwo5-1.fna.fbcdn.net/v/t1.0-1/p160x160/69348205_2398932836867116_1130887459089940480_n.jpg?_nc_cat=101&_nc_oc=AQk7yvIC7h-1Pf89_-L02MxcSO5WxeVTrWtapPLFurJ887vbDRDhH0iWeROqK8-_6yM&_nc_ht=scontent.flwo5-1.fna&oh=72a52cb9d8e8b5836cc2a3bf1e14208e&oe=5E1D22E6" alt="cabinet_avatar">
           </v-avatar>
           <p class="white--text subheading mt-1">Oleh Kozhushko</p>
         </v-flex>
