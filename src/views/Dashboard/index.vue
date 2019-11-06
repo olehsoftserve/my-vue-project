@@ -8,7 +8,7 @@
         <span class="caption text-lowercsase pa-1 grey--text mb-5"></span>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn small flat color="grey--text" @click="sortBy('title')" v-on="on">
+            <v-btn small text color="grey text--grey" @click="sortBy('title')" v-on="on">
               <v-icon left small>folder</v-icon>
               <span right class="caption text-uppercase">project</span>
             </v-btn>
@@ -17,7 +17,7 @@
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn small flat color="grey--text" @click="sortBy('folder')" v-on="on">
+            <v-btn small text color="grey text--grey" @click="sortBy('folder')" v-on="on">
               <v-icon left small>person</v-icon>
               <span right class="caption text-uppercase">person</span>
             </v-btn>
@@ -26,7 +26,7 @@
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn small flat color="grey--text" @click="sortBy('status')" v-on="on">
+            <v-btn small text color="grey text--grey" @click="sortBy('status')" v-on="on">
               <v-icon left small>cached</v-icon>
               <span right class="caption text-uppercase">status</span>
             </v-btn>
@@ -35,34 +35,34 @@
         </v-tooltip>
 
       </v-layout>
-      <v-card flat>
+      <v-card text>
         <v-layout row wrap>
           <v-flex xs12 md6>
-            <div class="caption grey--text pa-3">Project title</div>
+            <div class="caption grey--text pl-5">Project title</div>
           </v-flex>
           <v-flex xs6 sm4 md2>
-            <div class="caption grey--text pa-3">Person</div>
+            <div class="caption grey--text">Person</div>
           </v-flex>
           <v-flex xs6 sm4 md2>
-            <div class="caption grey--text pa-3">Due by</div>
+            <div class="caption grey--text pl-5">Due by</div>
           </v-flex>
           <v-flex xs6 sm4 md2>
-            <div class="caption grey--text pa-3 pr-10" align="right">Status</div>
+            <div class="caption grey--text pr-12" align="right">Status</div>
           </v-flex>
         </v-layout>
       </v-card>
 
-      <v-card flat v-for="project in projects" :key="project.title">
-        <v-layout row wrap :class="`pa-3 project ${project.status}`">
-          <v-flex xs12 md6>
+      <v-card text v-for="project in projects" :key="project.title">
+        <v-layout row wrap :class="`pa-3 pr-5  project ${project.status}`">
+          <v-flex xs12 md6 class="pt-2">
             <div>{{project.title}}</div>
           </v-flex>
 
-          <v-flex xs6 sm4 md2>
+          <v-flex xs6 sm4 md2  class="pt-2">
             <div>{{project.person}}</div>
           </v-flex>
 
-          <v-flex xs6 sm4 md2>
+          <v-flex xs6 sm4 md2  class="pt-2">
             <div>{{project.due}}</div>
           </v-flex>
           <v-flex xs6 sm4 md2>
@@ -120,7 +120,7 @@ export default {
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo, dolorum quia praesentium quam totam quo magni architecto numquam necessitatibus pariatur dolor! Eveniet iure repellendus magni explicabo tempore similique nisi."
         },
         {
-          title: "Google",
+          title: "Diamond",
           person: "Brian",
           due: "9st Sep  2019",
           status: "pending",
